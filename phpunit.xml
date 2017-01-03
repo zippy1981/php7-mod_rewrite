@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" backupGlobals="false">
+	<testsuites>
+        <testsuite name="Example Test Suite">
+            <directory suffix=".php">./tests/</directory>
+
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./application/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="coverage" charset="UTF-8"/>
+    </logging>
+</phpunit>
+
